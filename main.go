@@ -70,5 +70,6 @@ func main() {
 		options.Page = res.NextPage
 	}
 
+	fmt.Printf("Merged PR count: %d\n", mergedPRCount)
 	fmt.Printf("Time to merge: %v\n", timeToMerge/time.Duration(mergedPRCount))
 }
